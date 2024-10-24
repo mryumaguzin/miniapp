@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание событий</title>
+</head>
+<body>
+    <h1>События</h1>
+    <a href="/add">Добавить событие</a>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.title }} - {{ event.date }} {{ event.time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
